@@ -83,8 +83,20 @@
     "dressCode": {
         "title": "Código de Vestimenta",
         "formal": "Formal Elegante",
-        "description": "Vestimenta formal. Evitar color blanco.",
-        "colors": "Colores sugeridos: tonos pasteles, azul marino, champagne"
+        "description": "Queremos que te veas increíble. Aquí tienes una guía de inspiración.",
+        "women": "Para Ellas",
+        "womenDesc": "Vestidos largos o midi. Telas ligeras y fluidas ideales para el clima tropical.",
+        "men": "Para Ellos",
+        "menDesc": "Guayabera formal o camisa manga larga con pantalón de vestir.",
+        "avoidWhite": "⚠️ Por favor evitar el color blanco y tonos marfil.",
+        "paletteTitle": "Nuestra Paleta",
+        "colors": {
+            "navy": "Azul Marino",
+            "sage": "Verde Salvia",
+            "gold": "Dorado",
+            "terracotta": "Terracota",
+            "dustyBlue": "Azul Empolvado"
+        }
     },
     "gifts": {
         "title": "Mesa de Regalos",

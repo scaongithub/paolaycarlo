@@ -82,9 +82,21 @@
     },
     "dressCode": {
         "title": "Dress Code",
-        "formal": "Elegante Formale",
-        "description": "Abbigliamento formale. Evitare il colore bianco.",
-        "colors": "Colori suggeriti: toni pastello, blu navy, champagne"
+        "formal": "Formale Elegante",
+        "description": "Vogliamo vedervi splendere. Ecco una guida per ispirarvi.",
+        "women": "Per Lei",
+        "womenDesc": "Abiti lunghi o midi. Tessuti leggeri e fluidi ideali per il clima tropicale.",
+        "men": "Per Lui",
+        "menDesc": "Guayabera formale o camicia a maniche lunghe con pantaloni eleganti.",
+        "avoidWhite": "⚠️ Si prega di evitare il bianco e l'avorio.",
+        "paletteTitle": "La Nostra Palette",
+        "colors": {
+            "navy": "Blu Navy",
+            "sage": "Verde Salvia",
+            "gold": "Oro",
+            "terracotta": "Terracotta",
+            "dustyBlue": "Carta da Zucchero"
+        }
     },
     "gifts": {
         "title": "Lista Nozze",

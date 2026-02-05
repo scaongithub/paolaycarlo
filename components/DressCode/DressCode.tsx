@@ -9,11 +9,11 @@ export default function DressCode() {
     const { ref, isVisible } = useScrollReveal();
 
     const colorSwatches = [
-        { color: '#E8D5C4', name: 'Champagne' },
         { color: '#1B365D', name: 'Navy' },
         { color: '#A5C4B8', name: 'Sage' },
         { color: '#D4AF37', name: 'Gold' },
-        { color: '#F5E6E0', name: 'Blush' },
+        { color: '#E2725B', name: 'Terracotta' },
+        { color: '#7895A2', name: 'dustyBlue' },
     ];
 
     return (
@@ -23,21 +23,33 @@ export default function DressCode() {
                     <div className={styles.dressCodeIcon}>👔</div>
                     <h2 className={styles.dressCodeTitle}>{t('title')}</h2>
                     <p className={styles.dressCodeType}>{t('formal')}</p>
-                    <div className={styles.divider}></div>
                     <p className={styles.dressCodeDesc}>{t('description')}</p>
-                    <p className={styles.dressCodeColors}>{t('colors')}</p>
 
+                    <div className={styles.genderSection}>
+                        <div className={styles.genderBlock}>
+                            <h3 className={styles.genderTitle}>{t('women')} 👗</h3>
+                            <p className={styles.genderDesc}>{t('womenDesc')}</p>
+                        </div>
+                        <div className={styles.divider}></div>
+                        <div className={styles.genderBlock}>
+                            <h3 className={styles.genderTitle}>{t('men')} 🤵</h3>
+                            <p className={styles.genderDesc}>{t('menDesc')}</p>
+                        </div>
+                    </div>
+
+                    <div className={styles.warningBox}>
+                        <p>{t('avoidWhite')}</p>
+                    </div>
+
+                    <h3 className={styles.paletteTitle}>{t('paletteTitle')}</h3>
                     <div className={styles.colorSwatches}>
                         {colorSwatches.map((swatch, index) => (
-                            <div
-                                key={index}
-                                className={styles.swatchWrapper}
-                                title={swatch.name}
-                            >
+                            <div key={index} className={styles.swatchWrapper}>
                                 <div
                                     className={styles.swatch}
                                     style={{ backgroundColor: swatch.color }}
                                 ></div>
+                                <span className={styles.swatchName}>{t(`colors.${swatch.name.toLowerCase()}` as any)}</span>
                             </div>
                         ))}
                     </div>

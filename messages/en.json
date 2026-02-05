@@ -83,8 +83,20 @@
     "dressCode": {
         "title": "Dress Code",
         "formal": "Formal Elegant",
-        "description": "Formal attire. Please avoid white.",
-        "colors": "Suggested colors: pastel tones, navy blue, champagne"
+        "description": "We want you to look amazing. Here is an inspiration guide.",
+        "women": "For Her",
+        "womenDesc": "Long or midi dresses. Light, fluid fabrics ideal for tropical weather.",
+        "men": "For Him",
+        "menDesc": "Formal Guayabera or long-sleeve dress shirt with dress trousers.",
+        "avoidWhite": "⚠️ Please avoid white and ivory colors.",
+        "paletteTitle": "Our Palette",
+        "colors": {
+            "navy": "Navy Blue",
+            "sage": "Sage Green",
+            "gold": "Gold",
+            "terracotta": "Terracotta",
+            "dustyBlue": "Dusty Blue"
+        }
     },
     "gifts": {
         "title": "Registry",
