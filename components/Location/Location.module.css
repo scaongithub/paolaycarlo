@@ -1,0 +1,106 @@
+.location {
+    padding: var(--space-section) 0;
+    background: var(--color-bg-dark);
+    color: var(--color-text-inverse);
+}
+
+.locationHeader {
+    text-align: center;
+    margin-bottom: var(--space-3xl);
+}
+
+.locationTitle {
+    font-family: var(--font-serif);
+    font-size: var(--text-3xl);
+    color: var(--color-text-inverse);
+}
+
+.locationContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3xl);
+    align-items: center;
+}
+
+.locationInfo {
+    padding: var(--space-xl);
+}
+
+.venueName {
+    font-family: var(--font-script);
+    font-size: var(--text-2xl);
+    color: var(--color-secondary);
+    margin-bottom: var(--space-md);
+}
+
+.venueAddress {
+    font-size: var(--text-lg);
+    color: rgba(255, 254, 249, 0.8);
+    margin-bottom: var(--space-2xl);
+}
+
+.venueDetails {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.venueItem {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    font-size: var(--text-base);
+    color: rgba(255, 254, 249, 0.7);
+}
+
+.venueIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(212, 175, 55, 0.15);
+    border-radius: 50%;
+    color: var(--color-secondary);
+    font-size: var(--text-lg);
+}
+
+.mapContainer {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    background: var(--color-bg-alt);
+}
+
+.mapPlaceholder {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+    background: linear-gradient(135deg, rgba(139, 115, 85, 0.3), rgba(212, 175, 55, 0.2));
+    color: var(--color-text);
+}
+
+.mapIcon {
+    font-size: var(--text-4xl);
+}
+
+.mapText {
+    font-size: var(--text-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+@media (max-width: 768px) {
+    .locationContent {
+        grid-template-columns: 1fr;
+    }
+
+    .mapContainer {
+        aspect-ratio: 16/9;
+    }
+}

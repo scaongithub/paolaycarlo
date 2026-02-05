@@ -1,0 +1,103 @@
+{
+    "es": {
+        "meta": {
+            "title": "Paola & Carlo - Nuestra Boda",
+            "description": "Te invitamos a celebrar nuestra boda el 16 de agosto de 2026"
+        },
+        "hero": {
+            "subtitle": "Nos casamos",
+            "date": "16 de Agosto, 2026",
+            "location": "Tulum, México"
+        },
+        "countdown": {
+            "title": "Faltan",
+            "days": "Días",
+            "hours": "Horas",
+            "minutes": "Minutos",
+            "seconds": "Segundos"
+        },
+        "nav": {
+            "home": "Inicio",
+            "location": "Ubicación",
+            "itinerary": "Cómo Llegar",
+            "schedule": "Agenda",
+            "rsvp": "Confirmar Asistencia",
+            "gallery": "Galería",
+            "gifts": "Mesa de Regalos"
+        },
+        "location": {
+            "title": "Ubicación",
+            "venue": "Hotel Paradisus Playa del Carmen",
+            "address": "Playa del Carmen, Quintana Roo, México",
+            "ceremony": "Ceremonia Religiosa",
+            "reception": "Recepción y Fiesta"
+        },
+        "parents": {
+            "title": "Con la bendición de nuestros padres",
+            "bride": "Padres de la Novia",
+            "brideParents": "Miguel & Marisela",
+            "groom": "Padres del Novio",
+            "groomParents": "Graziano & Graziella"
+        },
+        "schedule": {
+            "title": "Agenda del Día",
+            "ceremony": "Ceremonia Religiosa",
+            "ceremonyTime": "5:00 PM",
+            "ceremonyLocation": "Capilla del Hotel",
+            "cocktail": "Cóctel de Bienvenida",
+            "cocktailTime": "6:30 PM",
+            "dinner": "Cena",
+            "dinnerTime": "8:00 PM",
+            "party": "¡Fiesta!",
+            "partyTime": "10:00 PM"
+        },
+        "rsvp": {
+            "title": "Confirmar Asistencia",
+            "subtitle": "Por favor confirma tu asistencia antes del 1 de Junio, 2026",
+            "name": "Nombre Completo",
+            "email": "Correo Electrónico",
+            "guests": "Número de Invitados",
+            "attending": "¿Asistirás?",
+            "yes": "¡Sí, ahí estaré!",
+            "no": "No podré asistir",
+            "dietary": "Restricciones Alimenticias",
+            "message": "Mensaje para los novios",
+            "submit": "Enviar Confirmación",
+            "success": "¡Gracias por confirmar!"
+        },
+        "itinerary": {
+            "title": "Cómo Llegar",
+            "subtitle": "Opciones de vuelo y transporte",
+            "airports": "Aeropuertos Cercanos",
+            "cancun": "Aeropuerto de Cancún (CUN)",
+            "cancunDesc": "Principal aeropuerto internacional, a 1.5 horas del hotel",
+            "tulum": "Aeropuerto de Tulum (TQO)",
+            "tulumDesc": "Nuevo aeropuerto, a 30 minutos del hotel",
+            "italian": "¿Vienes desde Italia?",
+            "italianSubtitle": "Opciones de vuelo desde ciudades italianas",
+            "fromVerona": "Desde Verona",
+            "fromMilan": "Desde Milán",
+            "fromVenice": "Desde Venecia",
+            "showFlights": "Ver opciones de vuelo",
+            "hideFlights": "Ocultar opciones"
+        },
+        "dressCode": {
+            "title": "Código de Vestimenta",
+            "formal": "Formal Elegante",
+            "description": "Vestimenta formal. Evitar color blanco.",
+            "colors": "Colores sugeridos: tonos pasteles, azul marino, champagne"
+        },
+        "gifts": {
+            "title": "Mesa de Regalos",
+            "subtitle": "Tu presencia es nuestro mejor regalo",
+            "message": "Si deseas obsequiarnos algo, agradecemos tu contribución a nuestra luna de miel"
+        },
+        "gallery": {
+            "title": "Nuestra Historia"
+        },
+        "footer": {
+            "message": "¡Los esperamos con mucho amor!",
+            "hashtag": "#PaolaYCarlo2026"
+        }
+    }
+}

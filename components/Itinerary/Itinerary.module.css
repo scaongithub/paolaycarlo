@@ -1,0 +1,169 @@
+.itinerary {
+    padding: var(--space-section) 0;
+    background: var(--color-bg-alt);
+}
+
+.itineraryHeader {
+    text-align: center;
+    margin-bottom: var(--space-3xl);
+}
+
+.itineraryTitle {
+    font-family: var(--font-serif);
+    font-size: var(--text-3xl);
+    color: var(--color-text);
+    margin-bottom: var(--space-sm);
+}
+
+.itinerarySubtitle {
+    font-size: var(--text-lg);
+    color: var(--color-text-muted);
+}
+
+.airportsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
+    margin-bottom: var(--space-3xl);
+}
+
+.airportCard {
+    padding: var(--space-xl);
+    background: var(--color-bg);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.airportCard:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.airportIcon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, var(--color-secondary), var(--color-secondary-light));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-md);
+}
+
+.airportName {
+    font-family: var(--font-serif);
+    font-size: var(--text-xl);
+    color: var(--color-text);
+    margin-bottom: var(--space-sm);
+}
+
+.airportDesc {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+}
+
+.italySection {
+    background: var(--color-bg);
+    border-radius: var(--radius-lg);
+    padding: var(--space-2xl);
+    box-shadow: var(--shadow-md);
+}
+
+.italyHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: var(--space-lg);
+}
+
+.italyTitle {
+    font-family: var(--font-serif);
+    font-size: var(--text-xl);
+    color: var(--color-text);
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.italyFlag {
+    font-size: var(--text-2xl);
+}
+
+.italySubtitle {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-lg);
+}
+
+.toggleBtn {
+    padding: var(--space-sm) var(--space-lg);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    color: var(--color-primary);
+    background: transparent;
+    border: 2px solid var(--color-primary);
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.toggleBtn:hover {
+    background: var(--color-primary);
+    color: var(--color-text-inverse);
+}
+
+.flightOptions {
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+    padding-top: var(--space-lg);
+    border-top: 1px solid var(--color-bg-alt);
+}
+
+.flightOptions.open {
+    display: grid;
+}
+
+.flightCard {
+    padding: var(--space-lg);
+    background: var(--color-bg-alt);
+    border-radius: var(--radius-md);
+    text-align: center;
+}
+
+.flightCity {
+    font-family: var(--font-serif);
+    font-size: var(--text-lg);
+    color: var(--color-text);
+    margin-bottom: var(--space-sm);
+}
+
+.flightRoute {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-md);
+}
+
+.flightIcon {
+    font-size: var(--text-xl);
+    color: var(--color-secondary);
+}
+
+@media (max-width: 768px) {
+    .airportsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .flightOptions {
+        grid-template-columns: 1fr;
+    }
+
+    .italyHeader {
+        flex-direction: column;
+        gap: var(--space-md);
+        text-align: center;
+    }
+}

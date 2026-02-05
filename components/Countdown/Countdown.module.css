@@ -1,0 +1,94 @@
+.countdown {
+    padding: var(--space-section) 0;
+    background: var(--color-bg);
+    text-align: center;
+}
+
+.countdownTitle {
+    font-family: var(--font-serif);
+    font-size: var(--text-xl);
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-2xl);
+    letter-spacing: 0.1em;
+}
+
+.countdownGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-lg);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.countdownItem {
+    position: relative;
+    padding: var(--space-xl) var(--space-md);
+    background: var(--color-bg-alt);
+    border-radius: var(--radius-lg);
+    transition: transform var(--transition-base);
+}
+
+.countdownItem:hover {
+    transform: translateY(-5px);
+}
+
+.countdownItem::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: var(--radius-lg);
+    padding: 1px;
+    background: linear-gradient(135deg, var(--color-secondary), transparent);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.countdownNumber {
+    font-family: var(--font-serif);
+    font-size: var(--text-4xl);
+    font-weight: 400;
+    color: var(--color-primary);
+    line-height: 1;
+    margin-bottom: var(--space-sm);
+}
+
+.countdownLabel {
+    font-size: var(--text-xs);
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+}
+
+.countdownDivider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+    margin-top: var(--space-3xl);
+}
+
+.countdownDivider::before,
+.countdownDivider::after {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background: var(--color-primary-light);
+}
+
+.countdownOrnament {
+    font-size: var(--text-lg);
+    color: var(--color-secondary);
+}
+
+@media (max-width: 600px) {
+    .countdownGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .countdownNumber {
+        font-size: var(--text-3xl);
+    }
+}

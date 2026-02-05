@@ -1,0 +1,71 @@
+.dressCode {
+    padding: var(--space-section) 0;
+    background: var(--color-bg);
+    text-align: center;
+}
+
+.dressCodeCard {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: var(--space-3xl);
+    background: var(--color-bg-alt);
+    border-radius: var(--radius-lg);
+    position: relative;
+    overflow: hidden;
+}
+
+.dressCodeCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-secondary), var(--color-primary), var(--color-secondary));
+}
+
+.dressCodeIcon {
+    font-size: var(--text-4xl);
+    margin-bottom: var(--space-lg);
+}
+
+.dressCodeTitle {
+    font-family: var(--font-serif);
+    font-size: var(--text-2xl);
+    color: var(--color-text);
+    margin-bottom: var(--space-sm);
+}
+
+.dressCodeType {
+    font-family: var(--font-script);
+    font-size: var(--text-2xl);
+    color: var(--color-secondary);
+    margin-bottom: var(--space-lg);
+}
+
+.dressCodeDesc {
+    font-size: var(--text-base);
+    color: var(--color-text-light);
+    margin-bottom: var(--space-md);
+}
+
+.dressCodeColors {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    font-style: italic;
+}
+
+.colorSwatches {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-md);
+    margin-top: var(--space-xl);
+}
+
+.swatch {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: var(--shadow-md);
+    border: 3px solid var(--color-bg);
+}

@@ -1,0 +1,75 @@
+.parents {
+    padding: var(--space-section) 0;
+    background: var(--color-bg-alt);
+    text-align: center;
+}
+
+.parentsTitle {
+    font-family: var(--font-serif);
+    font-size: var(--text-2xl);
+    color: var(--color-text);
+    margin-bottom: var(--space-3xl);
+}
+
+.parentsGrid {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: var(--space-2xl);
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.parentsCard {
+    padding: var(--space-xl);
+}
+
+.parentsLabel {
+    font-size: var(--text-sm);
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-md);
+}
+
+.parentsNames {
+    font-family: var(--font-script);
+    font-size: var(--text-2xl);
+    color: var(--color-primary);
+}
+
+.parentsDivider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-md);
+    color: var(--color-secondary);
+    font-size: var(--text-2xl);
+}
+
+.parentsDivider::before,
+.parentsDivider::after {
+    content: '';
+    width: 1px;
+    height: 40px;
+    background: linear-gradient(to bottom, transparent, var(--color-secondary), transparent);
+}
+
+@media (max-width: 768px) {
+    .parentsGrid {
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+    }
+
+    .parentsDivider {
+        flex-direction: row;
+    }
+
+    .parentsDivider::before,
+    .parentsDivider::after {
+        width: 40px;
+        height: 1px;
+        background: linear-gradient(to right, transparent, var(--color-secondary), transparent);
+    }
+}

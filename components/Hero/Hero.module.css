@@ -1,0 +1,161 @@
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    background: linear-gradient(135deg,
+            var(--color-bg-dark) 0%,
+            #3d3630 50%,
+            var(--color-bg-dark) 100%);
+}
+
+.heroBackground {
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(ellipse at 20% 80%, rgba(212, 175, 55, 0.15) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 20%, rgba(139, 115, 85, 0.1) 0%, transparent 50%);
+}
+
+.heroPattern {
+    position: absolute;
+    inset: 0;
+    opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.heroContent {
+    position: relative;
+    z-index: 1;
+    padding: var(--space-2xl);
+    max-width: 900px;
+}
+
+.heroEyebrow {
+    font-family: var(--font-sans);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+    margin-bottom: var(--space-xl);
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+
+.heroNames {
+    font-family: var(--font-script);
+    font-size: var(--text-display);
+    color: var(--color-text-inverse);
+    line-height: 1;
+    margin-bottom: var(--space-lg);
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.4s;
+    opacity: 0;
+}
+
+.heroAmpersand {
+    display: inline-block;
+    font-family: var(--font-serif);
+    font-size: 0.6em;
+    color: var(--color-secondary);
+    margin: 0 var(--space-md);
+    vertical-align: middle;
+}
+
+.heroDate {
+    font-family: var(--font-serif);
+    font-size: var(--text-2xl);
+    color: var(--color-text-inverse);
+    letter-spacing: 0.1em;
+    margin-bottom: var(--space-sm);
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.6s;
+    opacity: 0;
+}
+
+.heroLocation {
+    font-size: var(--text-lg);
+    color: rgba(255, 254, 249, 0.7);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.8s;
+    opacity: 0;
+}
+
+.heroDivider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-lg);
+    margin: var(--space-2xl) 0;
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+.heroDivider::before,
+.heroDivider::after {
+    content: '';
+    width: 80px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--color-secondary), transparent);
+}
+
+.heroOrnament {
+    color: var(--color-secondary);
+    font-size: var(--text-xl);
+}
+
+.scrollIndicator {
+    position: absolute;
+    bottom: var(--space-2xl);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-sm);
+    color: rgba(255, 254, 249, 0.5);
+    font-size: var(--text-xs);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    animation: fadeIn 1s ease forwards, float 2s ease-in-out infinite;
+    animation-delay: 1.5s, 1.5s;
+    opacity: 0;
+}
+
+.scrollArrow {
+    width: 24px;
+    height: 24px;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scrollArrow::after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: rotate(45deg) translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .heroNames {
+        font-size: clamp(2.5rem, 12vw, 5rem);
+    }
+
+    .heroAmpersand {
+        display: block;
+        margin: var(--space-sm) 0;
+    }
+}

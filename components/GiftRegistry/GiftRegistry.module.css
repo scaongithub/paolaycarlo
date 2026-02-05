@@ -1,0 +1,51 @@
+.gifts {
+    padding: var(--space-section) 0;
+    background: var(--color-bg-alt);
+    text-align: center;
+}
+
+.giftsContent {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.giftsIcon {
+    font-size: var(--text-4xl);
+    margin-bottom: var(--space-lg);
+}
+
+.giftsTitle {
+    font-family: var(--font-serif);
+    font-size: var(--text-3xl);
+    color: var(--color-text);
+    margin-bottom: var(--space-lg);
+}
+
+.giftsSubtitle {
+    font-family: var(--font-script);
+    font-size: var(--text-xl);
+    color: var(--color-secondary);
+    margin-bottom: var(--space-xl);
+}
+
+.giftsMessage {
+    font-size: var(--text-base);
+    color: var(--color-text-light);
+    line-height: 1.8;
+}
+
+.giftsDivider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+    margin: var(--space-2xl) 0;
+}
+
+.giftsDivider::before,
+.giftsDivider::after {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background: var(--color-primary-light);
+}

@@ -1,0 +1,86 @@
+.schedule {
+    padding: var(--space-section) 0;
+    background: var(--color-bg);
+}
+
+.scheduleHeader {
+    text-align: center;
+    margin-bottom: var(--space-3xl);
+}
+
+.scheduleTitle {
+    font-family: var(--font-serif);
+    font-size: var(--text-3xl);
+    color: var(--color-text);
+}
+
+.timeline {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-left: var(--space-3xl);
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 12px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--color-secondary), var(--color-primary-light), var(--color-secondary));
+}
+
+.timelineItem {
+    position: relative;
+    padding-bottom: var(--space-2xl);
+}
+
+.timelineItem:last-child {
+    padding-bottom: 0;
+}
+
+.timelineDot {
+    position: absolute;
+    left: calc(-1 * var(--space-3xl) + 4px);
+    top: 4px;
+    width: 18px;
+    height: 18px;
+    background: var(--color-bg);
+    border: 3px solid var(--color-secondary);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timelineItem:first-child .timelineDot {
+    background: var(--color-secondary);
+}
+
+.timelineTime {
+    font-family: var(--font-serif);
+    font-size: var(--text-xl);
+    color: var(--color-secondary);
+    margin-bottom: var(--space-xs);
+}
+
+.timelineEvent {
+    font-family: var(--font-serif);
+    font-size: var(--text-lg);
+    color: var(--color-text);
+    margin-bottom: var(--space-xs);
+}
+
+.timelineLocation {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+}
+
+@media (max-width: 600px) {
+    .timeline {
+        padding-left: var(--space-2xl);
+    }
+
+    .timelineDot {
+        left: calc(-1 * var(--space-2xl) + 4px);
+    }
+}
