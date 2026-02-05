@@ -1,0 +1,66 @@
+.container {
+    position: relative;
+    display: inline-block;
+    margin-top: var(--space-xl);
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 1.2s;
+    opacity: 0;
+    z-index: 10;
+}
+
+.calendarBtn {
+    padding: var(--space-sm) var(--space-xl);
+    border: 1px solid var(--color-secondary);
+    background: transparent;
+    color: var(--color-text-inverse);
+    text-transform: uppercase;
+    font-size: var(--text-xs);
+    letter-spacing: 0.2em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.calendarBtn:hover {
+    background: var(--color-secondary);
+    color: var(--color-bg-dark);
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: var(--space-xs);
+    background: var(--color-bg);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-md);
+    min-width: 180px;
+    overflow: hidden;
+    animation: fadeIn 0.3s ease forwards;
+}
+
+.option {
+    display: block;
+    width: 100%;
+    padding: var(--space-sm) var(--space-md);
+    text-align: left;
+    background: none;
+    border: none;
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    font-size: var(--text-sm);
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s ease;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.option:last-child {
+    border-bottom: none;
+}
+
+.option:hover {
+    background: var(--color-bg-alt);
+    color: var(--color-secondary);
+}

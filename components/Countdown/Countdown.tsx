@@ -1,8 +1,8 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useTranslations } from 'next-intl';
-import { useScrollReveal } from '@/hooks/useScrollReveal';
+import CalendarButton from '../CalendarButton/CalendarButton';
 import styles from './Countdown.module.css';
 
 interface TimeLeft {
@@ -16,13 +16,11 @@ const WEDDING_DATE = new Date('2026-08-16T17:00:00');
 
 export default function Countdown() {
     const t = useTranslations('countdown');
-    const { ref, isVisible } = useScrollReveal();
+    const sectionRef = useRef<HTMLElement>(null);
     const [timeLeft, setTimeLeft] = useState<TimeLeft>({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-    const [mounted, setMounted] = useState(false);
+    const [isVisible, setIsVisible] = useState(true); // Start visible to avoid blank state
 
     useEffect(() => {
-        setMounted(true);
-
         const calculateTimeLeft = (): TimeLeft => {
             const difference = WEDDING_DATE.getTime() - new Date().getTime();
 
@@ -47,10 +45,6 @@ export default function Countdown() {
         return () => clearInterval(timer);
     }, []);
 
-    if (!mounted) {
-        return null;
-    }
-
     const timeUnits = [
         { value: timeLeft.days, label: t('days') },
         { value: timeLeft.hours, label: t('hours') },
@@ -59,7 +53,7 @@ export default function Countdown() {
     ];
 
     return (
-        <section ref={ref} className={`${styles.countdown} ${isVisible ? 'reveal visible' : 'reveal'}`}>
+        <section ref={sectionRef} className={`${styles.countdown} ${isVisible ? 'reveal visible' : 'reveal'}`}>
             <div className="container">
                 <p className={styles.countdownTitle}>{t('title')}</p>
 
@@ -77,7 +71,15 @@ export default function Countdown() {
                 <div className={styles.countdownDivider}>
                     <span className={styles.countdownOrnament}>❦</span>
                 </div>
+
+                <div className={styles.actionButtons}>
+                    <CalendarButton />
+                    <a href="/images/save_the_date_card.png" download="Paola_Carlo_Save_the_Date.png" className={styles.downloadBtn}>
+                        Download Save the Date
+                    </a>
+                </div>
             </div>
         </section>
     );
 }
+

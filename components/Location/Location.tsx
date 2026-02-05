@@ -38,7 +38,7 @@ export default function Location() {
 
                     <div className={styles.mapContainer}>
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.267866380183!2d-87.0699042250278!3d20.66914568089063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e42fc6c29b6f5%3A0x8e8e3d64c010c9c7!2sParadisus%20Playa%20del%20Carmen!5e0!3m2!1sen!2smx!4v1709669530000!5m2!1sen!2smx"
+                            src="https://maps.google.com/maps?q=Barcelo+Maya+Palace+All+Inclusive&t=&z=15&ie=UTF8&iwloc=&output=embed"
                             width="100%"
                             height="100%"
                             style={{ border: 0 }}

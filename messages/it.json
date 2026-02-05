@@ -1,103 +1,101 @@
 {
-    "it": {
-        "meta": {
-            "title": "Paola & Carlo - Il Nostro Matrimonio",
-            "description": "Vi invitiamo a celebrare il nostro matrimonio il 16 agosto 2026"
-        },
-        "hero": {
-            "subtitle": "Ci sposiamo",
-            "date": "16 Agosto, 2026",
-            "location": "Tulum, Messico"
-        },
-        "countdown": {
-            "title": "Mancano",
-            "days": "Giorni",
-            "hours": "Ore",
-            "minutes": "Minuti",
-            "seconds": "Secondi"
-        },
-        "nav": {
-            "home": "Home",
-            "location": "Location",
-            "itinerary": "Come Arrivare",
-            "schedule": "Programma",
-            "rsvp": "Conferma Presenza",
-            "gallery": "Galleria",
-            "gifts": "Lista Nozze"
-        },
-        "location": {
-            "title": "Location",
-            "venue": "Hotel Paradisus Playa del Carmen",
-            "address": "Playa del Carmen, Quintana Roo, Messico",
-            "ceremony": "Cerimonia Religiosa",
-            "reception": "Ricevimento e Festa"
-        },
-        "parents": {
-            "title": "Con la benedizione dei nostri genitori",
-            "bride": "Genitori della Sposa",
-            "brideParents": "Miguel & Marisela",
-            "groom": "Genitori dello Sposo",
-            "groomParents": "Graziano & Graziella"
-        },
-        "schedule": {
-            "title": "Programma del Giorno",
-            "ceremony": "Cerimonia Religiosa",
-            "ceremonyTime": "17:00",
-            "ceremonyLocation": "Cappella dell'Hotel",
-            "cocktail": "Cocktail di Benvenuto",
-            "cocktailTime": "18:30",
-            "dinner": "Cena",
-            "dinnerTime": "20:00",
-            "party": "Festa!",
-            "partyTime": "22:00"
-        },
-        "rsvp": {
-            "title": "Conferma Presenza",
-            "subtitle": "Per favore conferma la tua presenza entro il 1 Giugno 2026",
-            "name": "Nome Completo",
-            "email": "Email",
-            "guests": "Numero di Ospiti",
-            "attending": "Parteciperai?",
-            "yes": "Sì, ci sarò!",
-            "no": "Mi dispiace, non potrò partecipare",
-            "dietary": "Restrizioni Alimentari",
-            "message": "Messaggio per gli sposi",
-            "submit": "Invia Conferma",
-            "success": "Grazie per aver confermato!"
-        },
-        "itinerary": {
-            "title": "Come Arrivare",
-            "subtitle": "Opzioni di volo e trasporto",
-            "airports": "Aeroporti Vicini",
-            "cancun": "Aeroporto di Cancún (CUN)",
-            "cancunDesc": "Aeroporto internazionale principale, a 1.5 ore dall'hotel",
-            "tulum": "Aeroporto di Tulum (TQO)",
-            "tulumDesc": "Nuovo aeroporto, a 30 minuti dall'hotel",
-            "italian": "Vieni dall'Italia?",
-            "italianSubtitle": "Opzioni di volo dalle città italiane",
-            "fromVerona": "Da Verona",
-            "fromMilan": "Da Milano",
-            "fromVenice": "Da Venezia",
-            "showFlights": "Mostra opzioni volo",
-            "hideFlights": "Nascondi opzioni"
-        },
-        "dressCode": {
-            "title": "Dress Code",
-            "formal": "Elegante Formale",
-            "description": "Abbigliamento formale. Evitare il colore bianco.",
-            "colors": "Colori suggeriti: toni pastello, blu navy, champagne"
-        },
-        "gifts": {
-            "title": "Lista Nozze",
-            "subtitle": "La vostra presenza è il nostro regalo più bello",
-            "message": "Se desiderate farci un regalo, apprezziamo un contributo per la nostra luna di miele"
-        },
-        "gallery": {
-            "title": "La Nostra Storia"
-        },
-        "footer": {
-            "message": "Vi aspettiamo con tanto amore!",
-            "hashtag": "#PaolaECarlo2026"
-        }
+    "meta": {
+        "title": "Paola & Carlo - Il Nostro Matrimonio",
+        "description": "Vi invitiamo a celebrare il nostro matrimonio il 16 agosto 2026"
+    },
+    "hero": {
+        "subtitle": "Nos Casamos",
+        "date": "16 Agosto, 2026",
+        "location": "Barcelo Grand Maya Resort, Messico"
+    },
+    "countdown": {
+        "title": "Mancano",
+        "days": "Giorni",
+        "hours": "Ore",
+        "minutes": "Minuti",
+        "seconds": "Secondi"
+    },
+    "nav": {
+        "home": "Home",
+        "location": "Location",
+        "itinerary": "Come Arrivare",
+        "schedule": "Programma",
+        "rsvp": "Conferma Presenza",
+        "gallery": "Galleria",
+        "gifts": "Lista Nozze"
+    },
+    "location": {
+        "title": "Location",
+        "venue": "Barcelo Grand Maya Resort",
+        "address": "Carretera Federal Chetumal Puerto Juarez Km. 266,3, 77750 Riviera Maya, Q.R., Messico",
+        "ceremony": "Cerimonia Religiosa",
+        "reception": "Ricevimento e Festa"
+    },
+    "parents": {
+        "title": "Con la benedizione dei nostri genitori",
+        "bride": "Genitori della Sposa",
+        "brideParents": "Miguel Cruz & Marisela Muñoz",
+        "groom": "Genitori dello Sposo",
+        "groomParents": "Graziano Scarsini & Graziella Braioni"
+    },
+    "schedule": {
+        "title": "Programma del Giorno",
+        "ceremony": "Cerimonia Religiosa",
+        "ceremonyTime": "17:00",
+        "ceremonyLocation": "Cappella dell'Hotel",
+        "cocktail": "Cocktail di Benvenuto",
+        "cocktailTime": "18:30",
+        "dinner": "Cena",
+        "dinnerTime": "20:00",
+        "party": "Festa!",
+        "partyTime": "22:00"
+    },
+    "rsvp": {
+        "title": "Conferma Presenza",
+        "subtitle": "Per favore conferma la tua presenza entro il 1 Giugno 2026",
+        "name": "Nome Completo",
+        "email": "Email",
+        "guests": "Numero di Ospiti",
+        "attending": "Parteciperai?",
+        "yes": "Sì, ci sarò!",
+        "no": "Mi dispiace, non potrò partecipare",
+        "dietary": "Restrizioni Alimentari",
+        "message": "Messaggio per gli sposi",
+        "submit": "Invia Conferma",
+        "success": "Grazie per aver confermato!"
+    },
+    "itinerary": {
+        "title": "Come Arrivare",
+        "subtitle": "Opzioni di volo e trasporto",
+        "airports": "Aeroporti Vicini",
+        "cancun": "Aeroporto di Cancún (CUN)",
+        "cancunDesc": "Aeroporto internazionale principale, a 1.5 ore dall'hotel",
+        "tulum": "Aeroporto di Tulum (TQO)",
+        "tulumDesc": "Nuovo aeroporto, a 30 minuti dall'hotel",
+        "italian": "Vieni dall'Italia?",
+        "italianSubtitle": "Opzioni di volo dalle città italiane",
+        "fromVerona": "Da Verona",
+        "fromMilan": "Da Milano",
+        "fromVenice": "Da Venezia",
+        "showFlights": "Mostra opzioni volo",
+        "hideFlights": "Nascondi opzioni"
+    },
+    "dressCode": {
+        "title": "Dress Code",
+        "formal": "Elegante Formale",
+        "description": "Abbigliamento formale. Evitare il colore bianco.",
+        "colors": "Colori suggeriti: toni pastello, blu navy, champagne"
+    },
+    "gifts": {
+        "title": "Lista Nozze",
+        "subtitle": "La vostra presenza è il nostro regalo più bello",
+        "message": "Se desiderate farci un regalo, apprezziamo un contributo per la nostra luna di miele"
+    },
+    "gallery": {
+        "title": "La Nostra Storia"
+    },
+    "footer": {
+        "message": "Vi aspettiamo con tanto amore!",
+        "hashtag": "#PaolaECarlo2026"
     }
 }

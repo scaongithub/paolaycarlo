@@ -1,22 +1,21 @@
 'use client';
 
+import { useRef, useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
+import { COUPLE_IMAGES } from '@/utils/images';
 import styles from './Gallery.module.css';
 
 export default function Gallery() {
     const t = useTranslations('gallery');
     const { ref, isVisible } = useScrollReveal();
+    const [images, setImages] = useState<string[]>([]);
 
-    // Vibrant gradients to replace placeholders
-    const gradients = [
-        'linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%)',
-        'linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%)',
-        'linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)',
-        'linear-gradient(to right, #8e9eab, #eef2f3)',
-        'linear-gradient(to top, #d299c2 0%, #fef9d7 100%)',
-        'linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%)',
-    ];
+    useEffect(() => {
+        // Shuffle and pick 6 images
+        const shuffled = [...COUPLE_IMAGES].sort(() => 0.5 - Math.random());
+        setImages(shuffled.slice(0, 6));
+    }, []);
 
     return (
         <section ref={ref} id="gallery" className={`${styles.gallery} ${isVisible ? 'reveal visible' : 'reveal'}`}>
@@ -26,15 +25,15 @@ export default function Gallery() {
                 </div>
 
                 <div className={styles.galleryGrid}>
-                    {gradients.map((gradient, index) => (
+                    {images.map((imgSrc, index) => (
                         <div
                             key={index}
                             className={styles.galleryItem}
-                            style={{ background: gradient }}
+                            style={{ backgroundImage: `url("${imgSrc}")`, backgroundSize: 'cover', backgroundPosition: 'center' }}
                         >
-                            <div className={styles.galleryPlaceholder}>
+                            {/* <div className={styles.galleryPlaceholder}>
                                 <span className={styles.galleryIcon}>❤️</span>
-                            </div>
+                            </div> */}
                         </div>
                     ))}
                 </div>
