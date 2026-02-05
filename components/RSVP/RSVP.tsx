@@ -2,24 +2,29 @@
 
 import { useState, FormEvent } from 'react';
 import { useTranslations } from 'next-intl';
+import { useScrollReveal } from '@/hooks/useScrollReveal';
 import styles from './RSVP.module.css';
 
 export default function RSVP() {
     const t = useTranslations('rsvp');
+    const { ref, isVisible } = useScrollReveal();
     const [submitted, setSubmitted] = useState(false);
 
     const handleSubmit = (e: FormEvent) => {
         e.preventDefault();
-        // TODO: Implement actual form submission (email, Google Sheets, etc.)
-        setSubmitted(true);
+        // Simulate API call
+        setTimeout(() => {
+            setSubmitted(true);
+        }, 1000);
     };
 
     if (submitted) {
         return (
             <section id="rsvp" className={styles.rsvp}>
                 <div className="container">
-                    <div className={styles.rsvpForm}>
-                        <p className={styles.successMessage}>✨ {t('success')} ✨</p>
+                    <div className={`${styles.rsvpForm} ${styles.submitted}`}>
+                        <span className={styles.successIcon}>✨</span>
+                        <p className={styles.successMessage}>{t('success')}</p>
                     </div>
                 </div>
             </section>
@@ -27,7 +32,7 @@ export default function RSVP() {
     }
 
     return (
-        <section id="rsvp" className={styles.rsvp}>
+        <section ref={ref} id="rsvp" className={`${styles.rsvp} ${isVisible ? 'reveal visible' : 'reveal'}`}>
             <div className="container">
                 <div className={styles.rsvpHeader}>
                     <h2 className={styles.rsvpTitle}>{t('title')}</h2>
@@ -42,6 +47,7 @@ export default function RSVP() {
                                 type="text"
                                 className={styles.formInput}
                                 required
+                                placeholder="Paolo Rossi"
                             />
                         </div>
                         <div className={styles.formGroup}>
@@ -50,53 +56,57 @@ export default function RSVP() {
                                 type="email"
                                 className={styles.formInput}
                                 required
+                                placeholder="paolo@example.com"
                             />
                         </div>
                     </div>
 
-                    <div className={styles.formGroup}>
-                        <label className={styles.formLabel}>{t('guests')}</label>
-                        <select className={styles.formSelect} defaultValue="1">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select>
-                    </div>
+                    <div className={styles.formRow}>
+                        <div className={styles.formGroup}>
+                            <label className={styles.formLabel}>{t('guests')}</label>
+                            <select className={styles.formSelect} defaultValue="1">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
 
-                    <div className={styles.formGroup}>
-                        <label className={styles.formLabel}>{t('attending')}</label>
-                        <div className={styles.radioGroup}>
-                            <label className={styles.radioLabel}>
-                                <input
-                                    type="radio"
-                                    name="attending"
-                                    value="yes"
-                                    className={styles.radioInput}
-                                    defaultChecked
-                                />
-                                {t('yes')}
-                            </label>
-                            <label className={styles.radioLabel}>
-                                <input
-                                    type="radio"
-                                    name="attending"
-                                    value="no"
-                                    className={styles.radioInput}
-                                />
-                                {t('no')}
-                            </label>
+                        <div className={styles.formGroup}>
+                            <label className={styles.formLabel}>{t('attending')}</label>
+                            <div className={styles.radioGroup}>
+                                <label className={`${styles.radioLabel} ${styles.yes}`}>
+                                    <input
+                                        type="radio"
+                                        name="attending"
+                                        value="yes"
+                                        className={styles.radioInput}
+                                        defaultChecked
+                                    />
+                                    <span>{t('yes')}</span>
+                                </label>
+                                <label className={`${styles.radioLabel} ${styles.no}`}>
+                                    <input
+                                        type="radio"
+                                        name="attending"
+                                        value="no"
+                                        className={styles.radioInput}
+                                    />
+                                    <span>{t('no')}</span>
+                                </label>
+                            </div>
                         </div>
                     </div>
 
                     <div className={styles.formGroup}>
                         <label className={styles.formLabel}>{t('dietary')}</label>
-                        <input type="text" className={styles.formInput} />
+                        <input type="text" className={styles.formInput} placeholder="Gluten free, Vegan..." />
                     </div>
 
                     <div className={styles.formGroup}>
                         <label className={styles.formLabel}>{t('message')}</label>
-                        <textarea className={styles.formTextarea}></textarea>
+                        <textarea className={styles.formTextarea} placeholder="..."></textarea>
                     </div>
 
                     <button type="submit" className={styles.submitBtn}>

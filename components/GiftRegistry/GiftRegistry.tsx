@@ -1,11 +1,15 @@
+'use client';
+
 import { useTranslations } from 'next-intl';
+import { useScrollReveal } from '@/hooks/useScrollReveal';
 import styles from './GiftRegistry.module.css';
 
 export default function GiftRegistry() {
     const t = useTranslations('gifts');
+    const { ref, isVisible } = useScrollReveal();
 
     return (
-        <section className={styles.gifts}>
+        <section ref={ref} className={`${styles.gifts} ${isVisible ? 'reveal visible' : 'reveal'}`}>
             <div className="container">
                 <div className={styles.giftsContent}>
                     <div className={styles.giftsIcon}>🎁</div>

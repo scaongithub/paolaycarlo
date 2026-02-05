@@ -1,11 +1,13 @@
 import { useTranslations } from 'next-intl';
+import { useScrollReveal } from '@/hooks/useScrollReveal';
 import styles from './Parents.module.css';
 
 export default function Parents() {
     const t = useTranslations('parents');
+    const { ref, isVisible } = useScrollReveal();
 
     return (
-        <section className={styles.parents}>
+        <section ref={ref} className={`${styles.parents} ${isVisible ? 'reveal visible' : 'reveal'}`}>
             <div className="container">
                 <h2 className={styles.parentsTitle}>{t('title')}</h2>
 

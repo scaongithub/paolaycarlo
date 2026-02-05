@@ -1,58 +1,80 @@
 .footer {
-    padding: var(--space-3xl) 0;
+    padding: var(--space-4xl) 0;
     background: var(--color-bg-dark);
     text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
-.footerContent {
-    max-width: 500px;
+/* Subtle pattern overlay */
+.footer::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0.05;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.activeContent {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
     margin: 0 auto;
 }
 
 .footerMessage {
     font-family: var(--font-script);
-    font-size: var(--text-2xl);
+    font-size: var(--text-3xl);
     color: var(--color-text-inverse);
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-xl);
+    line-height: 1.4;
 }
 
 .footerHashtag {
     display: inline-block;
-    padding: var(--space-sm) var(--space-lg);
-    font-size: var(--text-base);
+    padding: var(--space-sm) var(--space-xl);
+    font-size: var(--text-lg);
     font-weight: 500;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
     color: var(--color-secondary);
     background: rgba(212, 175, 55, 0.1);
     border: 1px solid rgba(212, 175, 55, 0.3);
     border-radius: var(--radius-full);
     margin-bottom: var(--space-2xl);
+    transition: all var(--transition-base);
+}
+
+.footerHashtag:hover {
+    background: rgba(212, 175, 55, 0.2);
+    transform: translateY(-2px);
 }
 
 .footerDivider {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: var(--space-md);
+    gap: var(--space-lg);
     margin-bottom: var(--space-xl);
 }
 
 .footerDivider::before,
 .footerDivider::after {
     content: '';
-    width: 40px;
+    width: 60px;
     height: 1px;
-    background: rgba(255, 254, 249, 0.2);
+    background: linear-gradient(90deg, transparent, rgba(255, 254, 249, 0.3), transparent);
 }
 
 .footerOrnament {
     color: var(--color-secondary);
-    font-size: var(--text-lg);
+    font-size: var(--text-2xl);
 }
 
 .footerNames {
     font-family: var(--font-serif);
-    font-size: var(--text-lg);
-    color: rgba(255, 254, 249, 0.6);
-    letter-spacing: 0.2em;
+    font-size: var(--text-sm);
+    color: rgba(255, 254, 249, 0.5);
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin-top: var(--space-lg);
 }

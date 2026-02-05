@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
+import { useScrollReveal } from '@/hooks/useScrollReveal';
 import styles from './Countdown.module.css';
 
 interface TimeLeft {
@@ -15,6 +16,7 @@ const WEDDING_DATE = new Date('2026-08-16T17:00:00');
 
 export default function Countdown() {
     const t = useTranslations('countdown');
+    const { ref, isVisible } = useScrollReveal();
     const [timeLeft, setTimeLeft] = useState<TimeLeft>({ days: 0, hours: 0, minutes: 0, seconds: 0 });
     const [mounted, setMounted] = useState(false);
 
@@ -57,13 +59,13 @@ export default function Countdown() {
     ];
 
     return (
-        <section className={styles.countdown}>
+        <section ref={ref} className={`${styles.countdown} ${isVisible ? 'reveal visible' : 'reveal'}`}>
             <div className="container">
                 <p className={styles.countdownTitle}>{t('title')}</p>
 
                 <div className={styles.countdownGrid}>
                     {timeUnits.map((unit, index) => (
-                        <div key={index} className={styles.countdownItem}>
+                        <div key={index} className={styles.countdownItem} style={{ animationDelay: `${index * 0.1}s` }}>
                             <div className={styles.countdownNumber}>
                                 {String(unit.value).padStart(2, '0')}
                             </div>

@@ -2,16 +2,24 @@
     padding: var(--space-section) 0;
     background: var(--color-bg);
     text-align: center;
+    position: relative;
 }
 
 .dressCodeCard {
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
     padding: var(--space-3xl);
-    background: var(--color-bg-alt);
+    background: #fff;
     border-radius: var(--radius-lg);
     position: relative;
     overflow: hidden;
+    box-shadow: var(--shadow-xl);
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    transition: transform var(--transition-base);
+}
+
+.dressCodeCard:hover {
+    transform: translateY(-5px);
 }
 
 .dressCodeCard::before {
@@ -20,52 +28,80 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 4px;
+    height: 6px;
     background: linear-gradient(90deg, var(--color-secondary), var(--color-primary), var(--color-secondary));
 }
 
 .dressCodeIcon {
     font-size: var(--text-4xl);
     margin-bottom: var(--space-lg);
+    display: inline-block;
+    padding: var(--space-md);
+    background: var(--color-bg-alt);
+    border-radius: 50%;
+    color: var(--color-primary);
 }
 
 .dressCodeTitle {
     font-family: var(--font-serif);
     font-size: var(--text-2xl);
-    color: var(--color-text);
-    margin-bottom: var(--space-sm);
+    color: var(--color-text-light);
+    margin-bottom: var(--space-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: var(--text-base);
 }
 
 .dressCodeType {
-    font-family: var(--font-script);
-    font-size: var(--text-2xl);
-    color: var(--color-secondary);
-    margin-bottom: var(--space-lg);
+    font-family: var(--font-serif);
+    font-size: var(--text-4xl);
+    color: var(--color-text);
+    margin-bottom: var(--space-md);
+    font-weight: 400;
+}
+
+.divider {
+    width: 60px;
+    height: 2px;
+    background: var(--color-secondary);
+    margin: var(--space-xl) auto;
+    opacity: 0.3;
 }
 
 .dressCodeDesc {
-    font-size: var(--text-base);
-    color: var(--color-text-light);
-    margin-bottom: var(--space-md);
+    font-size: var(--text-lg);
+    color: var(--color-text);
+    margin-bottom: var(--space-xs);
+    line-height: 1.6;
 }
 
 .dressCodeColors {
-    font-size: var(--text-sm);
+    font-size: var(--text-base);
     color: var(--color-text-muted);
     font-style: italic;
+    margin-bottom: var(--space-xl);
 }
 
 .colorSwatches {
     display: flex;
     justify-content: center;
-    gap: var(--space-md);
-    margin-top: var(--space-xl);
+    gap: var(--space-lg);
+    flex-wrap: wrap;
+}
+
+.swatchWrapper {
+    transition: transform var(--transition-fast);
+}
+
+.swatchWrapper:hover {
+    transform: translateY(-5px);
 }
 
 .swatch {
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
-    box-shadow: var(--shadow-md);
-    border: 3px solid var(--color-bg);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 4px solid #fff;
+    cursor: help;
 }

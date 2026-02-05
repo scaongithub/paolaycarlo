@@ -2,6 +2,7 @@
     padding: var(--space-section) 0;
     background: var(--color-bg);
     text-align: center;
+    position: relative;
 }
 
 .countdownTitle {
@@ -9,14 +10,24 @@
     font-size: var(--text-xl);
     color: var(--color-text-muted);
     margin-bottom: var(--space-2xl);
-    letter-spacing: 0.1em;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+}
+
+.countdownTitle::before,
+.countdownTitle::after {
+    content: '—';
+    color: var(--color-secondary);
+    margin: 0 var(--space-md);
 }
 
 .countdownGrid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: var(--space-lg);
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -25,24 +36,16 @@
     padding: var(--space-xl) var(--space-md);
     background: var(--color-bg-alt);
     border-radius: var(--radius-lg);
-    transition: transform var(--transition-base);
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+    border: 1px solid transparent;
+    box-shadow: var(--shadow-sm);
 }
 
 .countdownItem:hover {
-    transform: translateY(-5px);
-}
-
-.countdownItem::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border-radius: var(--radius-lg);
-    padding: 1px;
-    background: linear-gradient(135deg, var(--color-secondary), transparent);
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
+    transform: translateY(-8px);
+    background: #fff;
+    border-color: rgba(212, 175, 55, 0.2);
+    box-shadow: 0 15px 30px rgba(212, 175, 55, 0.15);
 }
 
 .countdownNumber {
@@ -52,6 +55,9 @@
     color: var(--color-primary);
     line-height: 1;
     margin-bottom: var(--space-sm);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .countdownLabel {
@@ -73,14 +79,15 @@
 .countdownDivider::before,
 .countdownDivider::after {
     content: '';
-    width: 60px;
+    width: 80px;
     height: 1px;
-    background: var(--color-primary-light);
+    background: linear-gradient(90deg, transparent, var(--color-primary-light), transparent);
 }
 
 .countdownOrnament {
-    font-size: var(--text-lg);
+    font-size: var(--text-2xl);
     color: var(--color-secondary);
+    animation: float 3s ease-in-out infinite;
 }
 
 @media (max-width: 600px) {
