@@ -60,9 +60,14 @@ export default function Itinerary() {
                         {italianCities.map((flight, index) => (
                             <div key={index} className={styles.flightCard}>
                                 <span className={styles.flightIcon}>{flight.icon}</span>
-                                <p className={styles.flightCity}>{flight.city}</p>
-                                <div className={styles.flightDivider}></div>
-                                <p className={styles.flightRoute}>{flight.route}</p>
+                                <div className={styles.flightInfo}>
+                                    <p className={styles.flightCity}>{flight.city}</p>
+                                    <p className={styles.flightRoute}>{flight.route}</p>
+                                    {flight.city.includes('Verona') && <span className={styles.flightTag}>Neos (Thu)</span>}
+                                    {flight.city.includes('Milan') && <span className={styles.flightTag}>Neos (Tue)</span>}
+                                    {flight.city.includes('Milano') && <span className={styles.flightTag}>Neos (Mar)</span>}
+                                    {flight.city.includes('Milán') && <span className={styles.flightTag}>Neos (Mar)</span>}
+                                </div>
                             </div>
                         ))}
                     </div>

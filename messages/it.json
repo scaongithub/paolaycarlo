@@ -5,7 +5,7 @@
     },
     "hero": {
         "subtitle": "Nos Casamos",
-        "date": "16 Agosto, 2026",
+        "date": "22 Agosto, 2026",
         "location": "Barcelo Grand Maya Resort, Messico"
     },
     "countdown": {
@@ -69,9 +69,9 @@
         "subtitle": "Opzioni di volo e trasporto",
         "airports": "Aeroporti Vicini",
         "cancun": "Aeroporto di Cancún (CUN)",
-        "cancunDesc": "Aeroporto internazionale principale, a 1.5 ore dall'hotel",
+        "cancunDesc": "Aeroporto principale (CUN). 1.5h dall'hotel. Taxi: ~€80 | Shuttle: ~€30 p/p",
         "tulum": "Aeroporto di Tulum (TQO)",
-        "tulumDesc": "Nuovo aeroporto, a 30 minuti dall'hotel",
+        "tulumDesc": "Nuovo aeroporto (TQO). 1.5h dall'hotel. Taxi/Transfer privato consigliato (~€100+)",
         "italian": "Vieni dall'Italia?",
         "italianSubtitle": "Opzioni di volo dalle città italiane",
         "fromVerona": "Da Verona",

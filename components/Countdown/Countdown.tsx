@@ -12,7 +12,7 @@ interface TimeLeft {
     seconds: number;
 }
 
-const WEDDING_DATE = new Date('2026-08-16T17:00:00');
+const WEDDING_DATE = new Date('2026-08-22T17:00:00');
 
 export default function Countdown() {
     const t = useTranslations('countdown');

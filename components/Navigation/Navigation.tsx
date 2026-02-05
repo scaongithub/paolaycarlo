@@ -65,6 +65,12 @@ export default function Navigation({ locale }: NavigationProps) {
                             >
                                 IT
                             </Link>
+                            <Link
+                                href={`/en`}
+                                className={`${styles.langBtn} ${locale === 'en' ? styles.active : ''}`}
+                            >
+                                EN
+                            </Link>
                         </div>
 
                         <button
@@ -100,6 +106,9 @@ export default function Navigation({ locale }: NavigationProps) {
                     </Link>
                     <Link href={`/it`} className={`${styles.langBtn} ${locale === 'it' ? styles.active : ''}`}>
                         Italiano
+                    </Link>
+                    <Link href={`/en`} className={`${styles.langBtn} ${locale === 'en' ? styles.active : ''}`}>
+                        English
                     </Link>
                 </div>
             </div>

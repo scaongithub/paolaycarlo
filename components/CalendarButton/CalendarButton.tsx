@@ -19,8 +19,8 @@ export default function CalendarButton() {
         title: "Paola & Carlo Wedding",
         description: "Celebra il nostro matrimonio con noi!",
         location: "Barcelo Grand Maya Resort, Mexico",
-        startTime: "2026-08-16T17:00:00",
-        endTime: "2026-08-17T02:00:00"
+        startTime: "2026-08-22T17:00:00",
+        endTime: "2026-08-23T02:00:00"
     };
 
     const toggleDropdown = () => setIsOpen(!isOpen);

@@ -1,0 +1,101 @@
+{
+    "meta": {
+        "title": "Paola & Carlo - Our Wedding",
+        "description": "We invite you to celebrate our wedding on August 22, 2026"
+    },
+    "hero": {
+        "subtitle": "We're Getting Married",
+        "date": "August 22, 2026",
+        "location": "Barcelo Grand Maya Resort, Mexico"
+    },
+    "countdown": {
+        "title": "Countdown",
+        "days": "Days",
+        "hours": "Hours",
+        "minutes": "Minutes",
+        "seconds": "Seconds"
+    },
+    "nav": {
+        "home": "Home",
+        "location": "Location",
+        "itinerary": "How to Get There",
+        "schedule": "Schedule",
+        "rsvp": "RSVP",
+        "gallery": "Gallery",
+        "gifts": "Registry"
+    },
+    "location": {
+        "title": "Location",
+        "venue": "Barcelo Grand Maya Resort",
+        "address": "Carretera Federal Chetumal Puerto Juarez Km. 266,3, 77750 Riviera Maya, Q.R., Mexico",
+        "ceremony": "Religious Ceremony",
+        "reception": "Reception & Party"
+    },
+    "parents": {
+        "title": "With the blessing of our parents",
+        "bride": "Bride's Parents",
+        "brideParents": "Miguel Cruz & Marisela Muñoz",
+        "groom": "Groom's Parents",
+        "groomParents": "Graziano Scarsini & Graziella Braioni"
+    },
+    "schedule": {
+        "title": "Day Schedule",
+        "ceremony": "Religious Ceremony",
+        "ceremonyTime": "5:00 PM",
+        "ceremonyLocation": "Hotel Chapel",
+        "cocktail": "Welcome Cocktail",
+        "cocktailTime": "6:30 PM",
+        "dinner": "Dinner",
+        "dinnerTime": "8:00 PM",
+        "party": "Party!",
+        "partyTime": "10:00 PM"
+    },
+    "rsvp": {
+        "title": "RSVP",
+        "subtitle": "Please confirm your attendance by June 1, 2026",
+        "name": "Full Name",
+        "email": "Email Address",
+        "guests": "Number of Guests",
+        "attending": "Will you attend?",
+        "yes": "Yes, I'll be there!",
+        "no": "I can't make it",
+        "dietary": "Dietary Restrictions",
+        "message": "Message for the couple",
+        "submit": "Send Confirmation",
+        "success": "Thanks for confirming!"
+    },
+    "itinerary": {
+        "title": "How to Get There",
+        "subtitle": "Flight and transport options",
+        "airports": "Nearby Airports",
+        "cancun": "Cancun Airport (CUN)",
+        "cancunDesc": "Main airport (CUN). 1.5h to hotel. Taxi: ~$85 USD | Shuttle: ~$30 USD p/p",
+        "tulum": "Tulum Airport (TQO)",
+        "tulumDesc": "New airport (TQO). 1.5h to hotel. Taxi/Private Transfer recommended (~$110+ USD)",
+        "italian": "Traveling from Italy?",
+        "italianSubtitle": "Flight options from Italian cities",
+        "fromVerona": "From Verona",
+        "fromMilan": "From Milan",
+        "fromVenice": "From Venice",
+        "showFlights": "Show flight options",
+        "hideFlights": "Hide options"
+    },
+    "dressCode": {
+        "title": "Dress Code",
+        "formal": "Formal Elegant",
+        "description": "Formal attire. Please avoid white.",
+        "colors": "Suggested colors: pastel tones, navy blue, champagne"
+    },
+    "gifts": {
+        "title": "Registry",
+        "subtitle": "Your presence is our best gift",
+        "message": "If you wish to give us a gift, we appreciate a contribution towards our honeymoon"
+    },
+    "gallery": {
+        "title": "Our Story"
+    },
+    "footer": {
+        "message": "We can't wait to see you!",
+        "hashtag": "#PaolaAndCarlo2026"
+    }
+}
