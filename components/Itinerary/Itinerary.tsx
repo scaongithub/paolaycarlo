@@ -16,9 +16,10 @@ export default function Itinerary() {
     ];
 
     const italianCities = [
-        { city: t('fromVerona'), route: 'VRN → CUN', icon: '🛫' },
-        { city: t('fromMilan'), route: 'MXP → CUN', icon: '🛫' },
-        { city: t('fromVenice'), route: 'VCE → CUN', icon: '🛫' },
+        { city: t('fromVerona'), route: 'VRN → FRA/MUC → CUN', airline: 'Lufthansa / Air France' },
+        { city: t('fromMilan'), route: 'MXP → CUN', airline: 'Neos (Tue)' },
+        { city: t('fromBologna'), route: 'BLQ → MAD → CUN', airline: 'Iberia' },
+        { city: t('fromVenice'), route: 'VCE → MAD → CUN', airline: 'Iberia' },
     ];
 
     return (
@@ -59,14 +60,11 @@ export default function Itinerary() {
                     <div className={`${styles.flightOptions} ${showFlights ? styles.open : ''}`}>
                         {italianCities.map((flight, index) => (
                             <div key={index} className={styles.flightCard}>
-                                <span className={styles.flightIcon}>{flight.icon}</span>
+                                <span className={styles.flightIcon}>🛫</span>
                                 <div className={styles.flightInfo}>
                                     <p className={styles.flightCity}>{flight.city}</p>
                                     <p className={styles.flightRoute}>{flight.route}</p>
-                                    {flight.city.includes('Verona') && <span className={styles.flightTag}>Neos (Thu)</span>}
-                                    {flight.city.includes('Milan') && <span className={styles.flightTag}>Neos (Tue)</span>}
-                                    {flight.city.includes('Milano') && <span className={styles.flightTag}>Neos (Mar)</span>}
-                                    {flight.city.includes('Milán') && <span className={styles.flightTag}>Neos (Mar)</span>}
+                                    <span className={styles.flightTag}>{flight.airline}</span>
                                 </div>
                             </div>
                         ))}

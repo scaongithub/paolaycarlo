@@ -9,10 +9,10 @@ export default function DressCode() {
     const { ref, isVisible } = useScrollReveal();
 
     const colorSwatches = [
-        { color: '#1B365D', name: 'Navy' },
-        { color: '#A5C4B8', name: 'Sage' },
-        { color: '#D4AF37', name: 'Gold' },
-        { color: '#E2725B', name: 'Terracotta' },
+        { color: '#1B365D', name: 'navy' },
+        { color: '#A5C4B8', name: 'sage' },
+        { color: '#D4AF37', name: 'gold' },
+        { color: '#E2725B', name: 'terracotta' },
         { color: '#7895A2', name: 'dustyBlue' },
     ];
 
@@ -49,7 +49,7 @@ export default function DressCode() {
                                     className={styles.swatch}
                                     style={{ backgroundColor: swatch.color }}
                                 ></div>
-                                <span className={styles.swatchName}>{t(`colors.${swatch.name.toLowerCase()}` as any)}</span>
+                                <span className={styles.swatchName}>{t(`colors.${swatch.name}` as any)}</span>
                             </div>
                         ))}
                     </div>

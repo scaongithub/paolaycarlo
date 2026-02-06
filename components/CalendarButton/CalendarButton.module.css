@@ -1,28 +1,24 @@
 .container {
     position: relative;
     display: inline-block;
-    margin-top: var(--space-xl);
-    animation: fadeInUp 0.8s ease forwards;
-    animation-delay: 1.2s;
-    opacity: 0;
     z-index: 10;
 }
 
 .calendarBtn {
     padding: var(--space-sm) var(--space-xl);
-    border: 1px solid var(--color-secondary);
+    border: 1px solid var(--color-primary);
     background: transparent;
-    color: var(--color-text-inverse);
+    color: var(--color-primary);
     text-transform: uppercase;
     font-size: var(--text-xs);
-    letter-spacing: 0.2em;
+    letter-spacing: 0.15em;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .calendarBtn:hover {
-    background: var(--color-secondary);
-    color: var(--color-bg-dark);
+    background: var(--color-primary);
+    color: var(--color-text-inverse);
 }
 
 .dropdown {
