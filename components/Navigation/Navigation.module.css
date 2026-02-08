@@ -84,6 +84,9 @@
 }
 
 .langBtn {
+    display: flex;
+    align-items: center;
+    gap: 4px;
     padding: var(--space-xs) var(--space-sm);
     font-size: var(--text-xs);
     font-weight: 600;
@@ -95,6 +98,10 @@
     cursor: pointer;
     transition: all var(--transition-fast);
     text-decoration: none;
+}
+
+.langFlag {
+    font-size: 1rem;
 }
 
 .langBtn:hover {

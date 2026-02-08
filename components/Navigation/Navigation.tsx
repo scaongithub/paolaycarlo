@@ -9,6 +9,12 @@ interface NavigationProps {
     locale: string;
 }
 
+const languages = [
+    { code: 'es', label: 'ES', fullLabel: 'Español', flag: '🇲🇽' },
+    { code: 'it', label: 'IT', fullLabel: 'Italiano', flag: '🇮🇹' },
+    { code: 'en', label: 'EN', fullLabel: 'English', flag: '🇬🇧' },
+];
+
 export default function Navigation({ locale }: NavigationProps) {
     const t = useTranslations('nav');
     const [isScrolled, setIsScrolled] = useState(false);
@@ -30,8 +36,6 @@ export default function Navigation({ locale }: NavigationProps) {
         { href: '#gallery', label: t('gallery') },
     ];
 
-    const otherLocale = locale === 'es' ? 'it' : 'es';
-
     return (
         <>
             <nav className={`${styles.nav} ${isScrolled ? styles.scrolled : ''}`}>
@@ -52,24 +56,16 @@ export default function Navigation({ locale }: NavigationProps) {
 
                     <div className={styles.navActions}>
                         <div className={styles.langSwitcher}>
-                            <Link
-                                href={`/es`}
-                                className={`${styles.langBtn} ${locale === 'es' ? styles.active : ''}`}
-                            >
-                                ES
-                            </Link>
-                            <Link
-                                href={`/it`}
-                                className={`${styles.langBtn} ${locale === 'it' ? styles.active : ''}`}
-                            >
-                                IT
-                            </Link>
-                            <Link
-                                href={`/en`}
-                                className={`${styles.langBtn} ${locale === 'en' ? styles.active : ''}`}
-                            >
-                                EN
-                            </Link>
+                            {languages.map((lang) => (
+                                <Link
+                                    key={lang.code}
+                                    href={`/${lang.code}`}
+                                    className={`${styles.langBtn} ${locale === lang.code ? styles.active : ''}`}
+                                >
+                                    <span className={styles.langFlag}>{lang.flag}</span>
+                                    {lang.label}
+                                </Link>
+                            ))}
                         </div>
 
                         <button
@@ -100,15 +96,16 @@ export default function Navigation({ locale }: NavigationProps) {
                     ))}
                 </ul>
                 <div className={styles.langSwitcher}>
-                    <Link href={`/es`} className={`${styles.langBtn} ${locale === 'es' ? styles.active : ''}`}>
-                        Español
-                    </Link>
-                    <Link href={`/it`} className={`${styles.langBtn} ${locale === 'it' ? styles.active : ''}`}>
-                        Italiano
-                    </Link>
-                    <Link href={`/en`} className={`${styles.langBtn} ${locale === 'en' ? styles.active : ''}`}>
-                        English
-                    </Link>
+                    {languages.map((lang) => (
+                        <Link
+                            key={lang.code}
+                            href={`/${lang.code}`}
+                            className={`${styles.langBtn} ${locale === lang.code ? styles.active : ''}`}
+                        >
+                            <span className={styles.langFlag}>{lang.flag}</span>
+                            {lang.fullLabel}
+                        </Link>
+                    ))}
                 </div>
             </div>
         </>
