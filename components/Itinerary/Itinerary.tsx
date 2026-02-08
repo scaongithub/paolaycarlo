@@ -19,8 +19,10 @@ export default function Itinerary() {
         { city: t('fromVerona'), route: 'VRN → FRA/MUC → CUN', airline: 'Lufthansa / Air France' },
         { city: t('fromMilan'), route: 'MXP → CUN', airline: 'Neos (Tue)' },
         { city: t('fromBologna'), route: 'BLQ → MAD → CUN', airline: 'Iberia' },
-        { city: t('fromVenice'), route: 'VCE → MAD → CUN', airline: 'Iberia' },
     ];
+
+    // Kayak search URL: VRN, MXP, VCE to CUN, Aug 16-27 (±2 days around 18-25)
+    const kayakUrl = "https://www.kayak.com/flights/VRN,MXP,VCE-CUN/2026-08-16/2026-08-27?sort=bestflight_a";
 
     return (
         <section ref={ref} id="itinerary" className={`${styles.itinerary} ${isVisible ? 'reveal visible' : 'reveal'}`}>
@@ -58,6 +60,14 @@ export default function Itinerary() {
                     </div>
 
                     <div className={`${styles.flightOptions} ${showFlights ? styles.open : ''}`}>
+                        <a
+                            href={kayakUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.kayakLink}
+                        >
+                            🔍 {t('searchFlights')}
+                        </a>
                         {italianCities.map((flight, index) => (
                             <div key={index} className={styles.flightCard}>
                                 <span className={styles.flightIcon}>🛫</span>

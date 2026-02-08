@@ -16,7 +16,7 @@ export default function Hero() {
         setBgImage(COUPLE_IMAGES[randomIndex]);
     }, []);
 
-    const calendarUrl = "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Paola+%26+Carlo+Wedding&dates=20260816T170000/20260817T020000&details=Celebra+il+nostro+matrimonio+con+noi!&location=Barcelo+Grand+Maya+Resort,+Mexico";
+    const calendarUrl = "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Paola+%26+Carlo+Wedding&dates=20260822T170000/20260823T020000&details=Celebra+il+nostro+matrimonio+con+noi!&location=Barcelo+Grand+Maya+Resort,+Mexico";
 
     return (
         <section className={styles.hero}>

@@ -27,7 +27,6 @@ export default function Navigation({ locale }: NavigationProps) {
         { href: '#location', label: t('location') },
         { href: '#schedule', label: t('schedule') },
         { href: '#itinerary', label: t('itinerary') },
-        { href: '#rsvp', label: t('rsvp') },
         { href: '#gallery', label: t('gallery') },
     ];
 

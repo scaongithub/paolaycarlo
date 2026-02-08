@@ -11,9 +11,11 @@ export default function DressCode() {
     const colorSwatches = [
         { color: '#1B365D', name: 'navy' },
         { color: '#A5C4B8', name: 'sage' },
-        { color: '#D4AF37', name: 'gold' },
         { color: '#E2725B', name: 'terracotta' },
         { color: '#7895A2', name: 'dustyBlue' },
+        { color: '#722F37', name: 'burgundy' },
+        { color: '#D4A5A5', name: 'dustyRose' },
+        { color: '#228B22', name: 'forest' },
     ];
 
     return (

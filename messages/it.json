@@ -13,7 +13,8 @@
         "days": "Giorni",
         "hours": "Ore",
         "minutes": "Minuti",
-        "seconds": "Secondi"
+        "seconds": "Secondi",
+        "downloadSaveTheDate": "Scarica Save the Date"
     },
     "nav": {
         "home": "Home",
@@ -34,21 +35,21 @@
     "parents": {
         "title": "Con la benedizione dei nostri genitori",
         "bride": "Genitori della Sposa",
-        "brideParents": "Miguel Cruz & Marisela Muñoz",
+        "brideParents": "Miguel Cruz\n&\nMarisela Muñoz",
         "groom": "Genitori dello Sposo",
-        "groomParents": "Graziano Scarsini & Graziella Braioni"
+        "groomParents": "Graziano Scarsini\n&\nGraziella Braioni"
     },
     "schedule": {
         "title": "Programma del Giorno",
         "ceremony": "Cerimonia Religiosa",
-        "ceremonyTime": "17:00",
+        "ceremonyTime": "TBD",
         "ceremonyLocation": "Cappella dell'Hotel",
         "cocktail": "Cocktail di Benvenuto",
-        "cocktailTime": "18:30",
+        "cocktailTime": "TBD",
         "dinner": "Cena",
-        "dinnerTime": "20:00",
+        "dinnerTime": "TBD",
         "party": "Festa!",
-        "partyTime": "22:00"
+        "partyTime": "TBD"
     },
     "rsvp": {
         "title": "Conferma Presenza",
@@ -69,15 +70,15 @@
         "subtitle": "Opzioni di volo e trasporto",
         "airports": "Aeroporti Vicini",
         "cancun": "Aeroporto di Cancún (CUN)",
-        "cancunDesc": "Aeroporto principale (CUN). 1.5h dall'hotel. Taxi: ~€80 | Shuttle: ~€30 p/p",
+        "cancunDesc": "Aeroporto principale (CUN). 1.5h dall'hotel.",
         "tulum": "Aeroporto di Tulum (TQO)",
-        "tulumDesc": "Nuovo aeroporto (TQO). 1.5h dall'hotel. Taxi/Transfer privato consigliato (~€100+)",
+        "tulumDesc": "Nuovo aeroporto (TQO). 1.5h dall'hotel.",
         "italian": "Vieni dall'Italia?",
         "italianSubtitle": "Opzioni di volo dalle città italiane",
         "fromVerona": "Da Verona",
         "fromMilan": "Da Milano",
         "fromBologna": "Da Bologna",
-        "fromVenice": "Da Venezia",
+        "searchFlights": "Cerca voli su Kayak",
         "showFlights": "Mostra opzioni volo",
         "hideFlights": "Nascondi opzioni"
     },
@@ -96,7 +97,11 @@
             "sage": "Verde Salvia",
             "gold": "Oro",
             "terracotta": "Terracotta",
-            "dustyBlue": "Carta da Zucchero"
+            "dustyBlue": "Carta da Zucchero",
+            "burgundy": "Borgogna",
+            "champagne": "Champagne",
+            "dustyRose": "Rosa Antico",
+            "forest": "Verde Foresta"
         }
     },
     "gifts": {

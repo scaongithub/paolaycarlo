@@ -16,7 +16,7 @@ export default function Parents() {
                 <div className={styles.parentsGrid}>
                     <div className={styles.parentsCard}>
                         <p className={styles.parentsLabel}>{t('bride')}</p>
-                        <p className={styles.parentsNames}>{t('brideParents')}</p>
+                        <p className={styles.parentsNames} style={{ whiteSpace: 'pre-line' }}>{t('brideParents')}</p>
                     </div>
 
                     <div className={styles.parentsDivider}>
@@ -25,7 +25,7 @@ export default function Parents() {
 
                     <div className={styles.parentsCard}>
                         <p className={styles.parentsLabel}>{t('groom')}</p>
-                        <p className={styles.parentsNames}>{t('groomParents')}</p>
+                        <p className={styles.parentsNames} style={{ whiteSpace: 'pre-line' }}>{t('groomParents')}</p>
                     </div>
                 </div>
             </div>

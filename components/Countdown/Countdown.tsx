@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import CalendarButton from '../CalendarButton/CalendarButton';
 import styles from './Countdown.module.css';
 
@@ -16,6 +16,7 @@ const WEDDING_DATE = new Date('2026-08-22T17:00:00');
 
 export default function Countdown() {
     const t = useTranslations('countdown');
+    const locale = useLocale();
     const sectionRef = useRef<HTMLElement>(null);
     const [timeLeft, setTimeLeft] = useState<TimeLeft>({ days: 0, hours: 0, minutes: 0, seconds: 0 });
     const [isVisible, setIsVisible] = useState(true); // Start visible to avoid blank state
@@ -52,6 +53,21 @@ export default function Countdown() {
         { value: timeLeft.seconds, label: t('seconds') },
     ];
 
+    // Use locale-specific Save the Date images
+    const getSaveTheDateImage = () => {
+        if (locale === 'it') return '/images/save_the_date_ita.jpeg';
+        if (locale === 'es') return '/images/save_the_date_esp.png';
+        return '/images/save_the_date_esp.png'; // Default to Spanish
+    };
+    const getSaveTheDateFilename = () => {
+        if (locale === 'it') return 'Paola_Carlo_Save_the_Date_IT.jpeg';
+        if (locale === 'es') return 'Paola_Carlo_Save_the_Date_ES.png';
+        return 'Paola_Carlo_Save_the_Date.png';
+    };
+
+    const saveTheDateImage = getSaveTheDateImage();
+    const saveTheDateFilename = getSaveTheDateFilename();
+
     return (
         <section ref={sectionRef} className={`${styles.countdown} ${isVisible ? 'reveal visible' : 'reveal'}`}>
             <div className="container">
@@ -74,8 +90,8 @@ export default function Countdown() {
 
                 <div className={styles.actionButtons}>
                     <CalendarButton />
-                    <a href="/images/save_the_date_card.png" download="Paola_Carlo_Save_the_Date.png" className={styles.downloadBtn}>
-                        Download Save the Date
+                    <a href={saveTheDateImage} download={saveTheDateFilename} className={styles.downloadBtn}>
+                        {t('downloadSaveTheDate')}
                     </a>
                 </div>
             </div>

@@ -13,7 +13,8 @@
         "days": "Days",
         "hours": "Hours",
         "minutes": "Minutes",
-        "seconds": "Seconds"
+        "seconds": "Seconds",
+        "downloadSaveTheDate": "Download Save the Date"
     },
     "nav": {
         "home": "Home",
@@ -34,21 +35,21 @@
     "parents": {
         "title": "With the blessing of our parents",
         "bride": "Bride's Parents",
-        "brideParents": "Miguel Cruz & Marisela Muñoz",
+        "brideParents": "Miguel Cruz\n&\nMarisela Muñoz",
         "groom": "Groom's Parents",
-        "groomParents": "Graziano Scarsini & Graziella Braioni"
+        "groomParents": "Graziano Scarsini\n&\nGraziella Braioni"
     },
     "schedule": {
         "title": "Day Schedule",
         "ceremony": "Religious Ceremony",
-        "ceremonyTime": "5:00 PM",
+        "ceremonyTime": "TBD",
         "ceremonyLocation": "Hotel Chapel",
         "cocktail": "Welcome Cocktail",
-        "cocktailTime": "6:30 PM",
+        "cocktailTime": "TBD",
         "dinner": "Dinner",
-        "dinnerTime": "8:00 PM",
+        "dinnerTime": "TBD",
         "party": "Party!",
-        "partyTime": "10:00 PM"
+        "partyTime": "TBD"
     },
     "rsvp": {
         "title": "RSVP",
@@ -69,15 +70,15 @@
         "subtitle": "Flight and transport options",
         "airports": "Nearby Airports",
         "cancun": "Cancun Airport (CUN)",
-        "cancunDesc": "Main airport (CUN). 1.5h to hotel. Taxi: ~$85 USD | Shuttle: ~$30 USD p/p",
+        "cancunDesc": "Main airport (CUN). 1.5h to hotel.",
         "tulum": "Tulum Airport (TQO)",
-        "tulumDesc": "New airport (TQO). 1.5h to hotel. Taxi/Private Transfer recommended (~$110+ USD)",
+        "tulumDesc": "New airport (TQO). 1.5h to hotel.",
         "italian": "Traveling from Italy?",
         "italianSubtitle": "Flight options from Italian cities",
         "fromVerona": "From Verona",
         "fromMilan": "From Milan",
         "fromBologna": "From Bologna",
-        "fromVenice": "From Venice",
+        "searchFlights": "Search flights on Kayak",
         "showFlights": "Show flight options",
         "hideFlights": "Hide options"
     },
@@ -96,7 +97,11 @@
             "sage": "Sage Green",
             "gold": "Gold",
             "terracotta": "Terracotta",
-            "dustyBlue": "Dusty Blue"
+            "dustyBlue": "Dusty Blue",
+            "burgundy": "Burgundy",
+            "champagne": "Champagne",
+            "dustyRose": "Dusty Rose",
+            "forest": "Forest Green"
         }
     },
     "gifts": {

@@ -143,6 +143,29 @@
     border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
+.kayakLink {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    padding: var(--space-md) var(--space-xl);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+    color: var(--color-text-inverse);
+    font-weight: 600;
+    font-size: var(--text-base);
+    text-decoration: none;
+    border-radius: var(--radius-full);
+    transition: all var(--transition-fast);
+    box-shadow: var(--shadow-md);
+}
+
+.kayakLink:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+    background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary));
+}
+
 .flightCard {
     padding: var(--space-lg);
     background: var(--color-bg-alt);
