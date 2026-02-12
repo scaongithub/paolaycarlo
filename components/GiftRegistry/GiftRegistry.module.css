@@ -49,3 +49,124 @@
     height: 1px;
     background: var(--color-primary-light);
 }
+
+/* Envelope Toggle Button */
+.bankingToggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: var(--space-xl);
+    padding: 0.75rem 1.75rem;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-family: var(--font-serif);
+    font-size: var(--text-base);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+.bankingToggle:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+}
+
+.bankingToggle:active {
+    transform: translateY(0);
+}
+
+.envelopeIcon {
+    font-size: 1.25rem;
+    transition: transform 0.3s ease;
+}
+
+.bankingToggle:hover .envelopeIcon {
+    transform: scale(1.15);
+}
+
+/* Banking Details Container */
+.bankingDetails {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.4s ease,
+        margin 0.4s ease;
+    margin-top: 0;
+}
+
+.bankingVisible {
+    max-height: 600px;
+    opacity: 1;
+    margin-top: var(--space-xl);
+}
+
+.bankingInner {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    padding: var(--space-md) 0;
+}
+
+/* Bank Card */
+.bankCard {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.bankCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.bankFlag {
+    font-size: 1.75rem;
+    margin-bottom: 0.25rem;
+}
+
+.bankCountry {
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    color: var(--color-text);
+    margin-bottom: 0.5rem;
+}
+
+.bankInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.bankRow {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    text-align: center;
+}
+
+.bankLabel {
+    font-size: 0.7rem;
+    color: var(--color-text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+}
+
+.bankValue {
+    font-family: 'Courier New', monospace;
+    font-size: 0.8rem;
+    color: var(--color-text);
+    background: rgba(0, 0, 0, 0.03);
+    padding: 0.3rem 0.5rem;
+    border-radius: 6px;
+    letter-spacing: 0.02em;
+    word-break: break-all;
+    user-select: all;
+}

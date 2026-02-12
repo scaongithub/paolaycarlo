@@ -108,7 +108,14 @@
     "gifts": {
         "title": "Registry",
         "subtitle": "Your presence is our best gift",
-        "message": "If you wish to give us a gift, we appreciate a contribution towards our honeymoon"
+        "message": "If you wish to give us a gift, we appreciate a contribution towards our honeymoon",
+        "showBanking": "View banking details",
+        "hideBanking": "Hide banking details",
+        "mexicanBank": "Mexican Bank Account",
+        "italianBank": "Italian Bank Account",
+        "accountNumber": "Account Number",
+        "clabeNumber": "CLABE Number",
+        "accountHolder": "Account Holder"
     },
     "weddingPlanner": {
         "title": "Wedding Planner & Reservation",

@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
+import { useRouter, usePathname } from '@/i18n/navigation';
 import styles from './Navigation.module.css';
 
 interface NavigationProps {
@@ -17,6 +18,8 @@ const languages = [
 
 export default function Navigation({ locale }: NavigationProps) {
     const t = useTranslations('nav');
+    const router = useRouter();
+    const pathname = usePathname();
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -35,6 +38,10 @@ export default function Navigation({ locale }: NavigationProps) {
         { href: '#itinerary', label: t('itinerary') },
         { href: '#gallery', label: t('gallery') },
     ];
+
+    const switchLocale = (newLocale: string) => {
+        router.replace(pathname, { locale: newLocale, scroll: false });
+    };
 
     return (
         <>
@@ -57,14 +64,14 @@ export default function Navigation({ locale }: NavigationProps) {
                     <div className={styles.navActions}>
                         <div className={styles.langSwitcher}>
                             {languages.map((lang) => (
-                                <Link
+                                <button
                                     key={lang.code}
-                                    href={`/${lang.code}`}
+                                    onClick={() => switchLocale(lang.code)}
                                     className={`${styles.langBtn} ${locale === lang.code ? styles.active : ''}`}
                                 >
                                     <span className={styles.langFlag}>{lang.flag}</span>
                                     {lang.label}
-                                </Link>
+                                </button>
                             ))}
                         </div>
 
@@ -97,17 +104,21 @@ export default function Navigation({ locale }: NavigationProps) {
                 </ul>
                 <div className={styles.langSwitcher}>
                     {languages.map((lang) => (
-                        <Link
+                        <button
                             key={lang.code}
-                            href={`/${lang.code}`}
+                            onClick={() => {
+                                switchLocale(lang.code);
+                                setIsMobileMenuOpen(false);
+                            }}
                             className={`${styles.langBtn} ${locale === lang.code ? styles.active : ''}`}
                         >
                             <span className={styles.langFlag}>{lang.flag}</span>
                             {lang.fullLabel}
-                        </Link>
+                        </button>
                     ))}
                 </div>
             </div>
         </>
     );
 }
+

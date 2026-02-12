@@ -108,7 +108,14 @@
     "gifts": {
         "title": "Lista Nozze",
         "subtitle": "La vostra presenza è il nostro regalo più bello",
-        "message": "Se desiderate farci un regalo, apprezziamo un contributo per la nostra luna di miele"
+        "message": "Se desiderate farci un regalo, apprezziamo un contributo per la nostra luna di miele",
+        "showBanking": "Mostra coordinate bancarie",
+        "hideBanking": "Nascondi coordinate bancarie",
+        "mexicanBank": "Conto Bancario Messicano",
+        "italianBank": "Conto Bancario Italiano",
+        "accountNumber": "Num. Conto",
+        "clabeNumber": "Conto CLABE",
+        "accountHolder": "Intestatario"
     },
     "weddingPlanner": {
         "title": "Wedding Planner & Prenotazione",

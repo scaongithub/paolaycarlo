@@ -108,7 +108,14 @@
     "gifts": {
         "title": "Mesa de Regalos",
         "subtitle": "Tu presencia es nuestro mejor regalo",
-        "message": "Si deseas obsequiarnos algo, agradecemos tu contribución a nuestra luna de miel"
+        "message": "Si deseas obsequiarnos algo, agradecemos tu contribución a nuestra luna de miel",
+        "showBanking": "Ver datos bancarios",
+        "hideBanking": "Ocultar datos bancarios",
+        "mexicanBank": "Cuenta Bancaria Mexicana",
+        "italianBank": "Cuenta Bancaria Italiana",
+        "accountNumber": "Num. Cuenta",
+        "clabeNumber": "Cuenta CLABE",
+        "accountHolder": "Titular"
     },
     "weddingPlanner": {
         "title": "Wedding Planner & Reservación",
