@@ -48,6 +48,20 @@ export default function Location() {
                         ></iframe>
                     </div>
                 </div>
+
+                <div className={styles.videoSection}>
+                    <h3 className={styles.videoTitle}>{t('videoTitle')}</h3>
+                    <div className={styles.videoContainer}>
+                        <iframe
+                            src="https://www.youtube.com/embed/_z4YHHH2NbM?si=TQYEclU33Rwc0iC1"
+                            title="YouTube video player"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
+                </div>
             </div>
         </section>
     );
