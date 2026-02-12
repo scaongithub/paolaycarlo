@@ -109,6 +109,13 @@
         "subtitle": "La vostra presenza è il nostro regalo più bello",
         "message": "Se desiderate farci un regalo, apprezziamo un contributo per la nostra luna di miele"
     },
+    "weddingPlanner": {
+        "title": "Wedding Planner & Prenotazione",
+        "plannerLabel": "Wedding Planner",
+        "reservationLabel": "Prenotazione",
+        "reservationDesc": "Prenota la tua camera nel resort con tariffa speciale per gli invitati.",
+        "reservationBtn": "Prenota Ora"
+    },
     "gallery": {
         "title": "La Nostra Storia"
     },

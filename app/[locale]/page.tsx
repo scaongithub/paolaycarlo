@@ -1,5 +1,6 @@
 import Hero from '../../components/Hero/Hero';
 import Countdown from '../../components/Countdown/Countdown';
+import WeddingPlanner from '../../components/WeddingPlanner/WeddingPlanner';
 import Parents from '../../components/Parents/Parents';
 import Location from '../../components/Location/Location';
 import DayPlan from '../../components/DayPlan/DayPlan';
@@ -15,6 +16,7 @@ export default function HomePage() {
         <>
             <Hero />
             <Countdown />
+            <WeddingPlanner />
             <Parents />
             <Location />
             <DayPlan />

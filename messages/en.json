@@ -109,6 +109,13 @@
         "subtitle": "Your presence is our best gift",
         "message": "If you wish to give us a gift, we appreciate a contribution towards our honeymoon"
     },
+    "weddingPlanner": {
+        "title": "Wedding Planner & Reservation",
+        "plannerLabel": "Wedding Planner",
+        "reservationLabel": "Reservation",
+        "reservationDesc": "Book your room at the resort with a special rate for guests.",
+        "reservationBtn": "Book Now"
+    },
     "gallery": {
         "title": "Our Story"
     },
