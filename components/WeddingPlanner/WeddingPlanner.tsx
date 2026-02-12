@@ -60,6 +60,46 @@ export default function WeddingPlanner() {
                             </svg>
                         </div>
                         <h3 className={styles.cardTitle}>{t('reservationLabel')}</h3>
+                        <p className={styles.allInclusiveLabel}>{t('allInclusive')}</p>
+
+                        <div className={styles.perksGrid}>
+                            <div className={styles.perkItem}>
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                                    <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
+                                    <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
+                                    <line x1="6" y1="1" x2="6" y2="4" />
+                                    <line x1="10" y1="1" x2="10" y2="4" />
+                                    <line x1="14" y1="1" x2="14" y2="4" />
+                                </svg>
+                                <span>{t('perkFood')}</span>
+                            </div>
+                            <div className={styles.perkItem}>
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                                    <path d="M8 2h8l4 10H4L8 2z" />
+                                    <path d="M12 12v10" />
+                                    <path d="M6 22h12" />
+                                </svg>
+                                <span>{t('perkDrinks')}</span>
+                            </div>
+                            <div className={styles.perkItem}>
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                                    <path d="M17 11h1a3 3 0 0 1 0 6h-1" />
+                                    <path d="M3 11h14v7a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4v-7z" />
+                                    <path d="M6 7c0-1.1.9-2 2-2h4a2 2 0 0 1 2 2v4H6V7z" />
+                                </svg>
+                                <span>{t('perkBeer')}</span>
+                            </div>
+                            <div className={styles.perkItem}>
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+                                    <line x1="9" y1="9" x2="9.01" y2="9" />
+                                    <line x1="15" y1="9" x2="15.01" y2="9" />
+                                </svg>
+                                <span>{t('perkActivities')}</span>
+                            </div>
+                        </div>
+
                         <p className={styles.reservationDesc}>{t('reservationDesc')}</p>
 
                         <a

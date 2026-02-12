@@ -114,7 +114,12 @@
         "plannerLabel": "Wedding Planner",
         "reservationLabel": "Reservation",
         "reservationDesc": "Book your room at the resort with a special rate for guests.",
-        "reservationBtn": "Book Now"
+        "reservationBtn": "Book Now",
+        "allInclusive": "All Inclusive",
+        "perkFood": "Food",
+        "perkDrinks": "Drinks",
+        "perkBeer": "Beer",
+        "perkActivities": "Activities"
     },
     "gallery": {
         "title": "Our Story"

@@ -114,7 +114,12 @@
         "plannerLabel": "Wedding Planner",
         "reservationLabel": "Prenotazione",
         "reservationDesc": "Prenota la tua camera nel resort con tariffa speciale per gli invitati.",
-        "reservationBtn": "Prenota Ora"
+        "reservationBtn": "Prenota Ora",
+        "allInclusive": "Tutto Incluso",
+        "perkFood": "Cibo",
+        "perkDrinks": "Bevande",
+        "perkBeer": "Birra",
+        "perkActivities": "Attività"
     },
     "gallery": {
         "title": "La Nostra Storia"
