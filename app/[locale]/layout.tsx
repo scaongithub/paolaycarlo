@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { Playfair_Display, Outfit, Great_Vibes } from 'next/font/google';
 import { routing } from '@/i18n/routing';
 import Navigation from '@/components/Navigation/Navigation';
+import { Analytics } from '@vercel/analytics/next';
 import '../globals.css';
 
 const playfair = Playfair_Display({
@@ -51,6 +52,7 @@ export default async function LocaleLayout({
                     <Navigation locale={locale} />
                     <main>{children}</main>
                 </NextIntlClientProvider>
+                <Analytics />
             </body>
         </html>
     );
